@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lesson 5</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: row;
+        }
+        .target{
+            width: 400px;
+            height: 100px;
+            background:black ;
+        }
+        .point{
+            width: 400px;
+            height: 100px;
+            background:red ;
+        }
+        @media screen and (min-width: 0) and (max-width: 600px) {
+            .target{
+                background: silver;
+            }
+            body{
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+        <div class="target"></div>
+        <div class="point"></div>
+
+</body>
+</html>

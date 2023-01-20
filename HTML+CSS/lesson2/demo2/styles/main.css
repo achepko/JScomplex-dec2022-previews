@@ -1,0 +1,21 @@
+body{
+    margin: 0;
+}
+
+.wrap {
+    height: 800px;
+    background: salmon;
+
+    display: flex;
+
+
+}
+    h2{
+    margin: 0;
+}
+.box {
+    background: blue;
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+}

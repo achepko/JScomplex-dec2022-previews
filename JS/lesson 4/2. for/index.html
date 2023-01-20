@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FOR</title>
+    <style>
+        .target img {
+            width: 200px;
+        }
+    </style>
+
+</head>
+<body>
+
+
+<script>
+
+  let users = [
+    {name:'anton', age:26, status: false},
+    {name:'anna', age:22, status: false},
+    {name:'kristina', age:36, status: true},
+    {name:'sveta', age:56, status: false},
+    {name:'sabina', age:226, status: true},
+    {name:'sergei', age:16, status: false},
+    {name:'pasha', age:22, status: false},
+    {name:'oksana', age:223, status: true},
+    {name:'lena', age:23, status: false},
+    {name:'oleg', age:21, status: false},
+    {name:'tanya', age:264, status: true},
+    {name:'artur', age:23, status: false},
+      ];
+
+  // for (let i = 0; i < users.length - 1; i++){
+  //   console.log(users[i])
+  //     let user = users[i];
+  //     document.write(`<h3>${user.name} ${users[i].age} - ${users[i].status}</h3>`)
+  // }
+  //
+  // for (let i = 0; i < users.length; i++) {
+  //     let user = users[i];
+  //
+  // }
+  //
+  //   users[0].age = 10;
+  // console.log(users);
+  //
+  // users[0].wifename = 'lena'
+  // users[4].wifename = 'lena'
+  // users[4].wifename = 'lena'
+  //
+  //
+
+
+  let products = [
+
+      {
+          title: 'milk',
+          price: 22,
+          image: 'https://images.immediate.co.uk/production/volatile/sites/30/2020/02/Glass-and-bottle-of-milk-fe0997a.jpg'
+      },
+      {
+          title: 'juice',
+          price: 40,
+          image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Orange_juice_1.jpg/1200px-Orange_juice_1.jpg'
+      },
+      {
+          title: 'tomato',
+          price: 19,
+          image: 'https://upload.wikimedia.org/wikipedia/commons/8/89/Tomato_je.jpg'
+      },
+      {
+          title: 'tea',
+          price: 50,
+          image: 'https://m.media-amazon.com/images/I/51MDF8yojFL.jpg'
+      },
+  ];
+
+  for (let i = 0; i < products.length; i++) {
+      let product = products[i];
+      document.write(`<div class="target">
+                            <h2>${product.title} - ${product.price} UAH</h2>
+                            <img src="${product.image}" alt="">
+
+                     <div/>`)
+
+  }
+
+
+
+
+
+</script>
+
+</body>
+</html>

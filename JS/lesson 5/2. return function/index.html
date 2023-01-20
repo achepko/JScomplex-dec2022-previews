@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Return function</title>
+</head>
+<body>
+
+<script>
+
+// function calc(a,b) {
+//     let result = a + b;
+//     return result;
+// }
+//     let r1 = calc(10,20);
+//     let r2 = calc(20,22);
+//     console.log(r1,r2)
+
+// 1000000 pdv warTax
+
+// function percantage(cash,per) {
+//     return cash/100*per;
+// }
+// function tax(sum) {
+//     return  sum - percantage(sum,20) - percantage(sum,1.5);
+//     };
+// let number = tax(10000);
+// console.log(number)
+//
+
+
+function userFilter(users) {
+    let filteredUsers = [];
+    for (const user of users) {
+        if (user.age > 27){
+            filteredUsers.push(user);
+        }
+    }
+    return filteredUsers
+};
+ let users = [
+     {id: 1, name:'anton', age:26, status: false},
+     {id: 2, name:'anna', age:22, status: false},
+     {id: 3, name:'kristina', age:36, status: true},
+     {id: 4, name:'sveta', age:56, status: false},
+     {id: 5, name:'sabina', age:226, status: true},
+     {id: 6, name:'sergei', age:16, status: false},
+     {id: 7, name:'pasha', age:22, status: false},
+     {id: 8, name:'oksana', age:223, status: true},
+     {id: 9, name:'lena', age:23, status: false},
+     {id: 10, name:'oleg', age:21, status: false},
+     {id: 11, name:'tanya', age:264, status: true},
+     {id: 12, name:'artur', age:23, status: false},
+   ];
+let filter = userFilter(users);
+console.log(filter)
+
+
+</script>
+
+</body>
+</html>

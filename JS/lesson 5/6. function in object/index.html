@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Function in object</title>
+</head>
+<body>
+
+<script>
+
+  let user = {
+    name: 'anton',
+    age: 22,
+    greeting: function (msg) {
+      return `${msg} my name is ${user.name}`
+    },
+    vitanny: (msg) => `${msg} my age is ${user.age}`
+  }
+
+  console.log(user.greeting('heeeeeeeeeee'))
+  console.log(user.vitanny('good bye'));
+
+
+
+
+
+</script>
+
+</body>
+</html>

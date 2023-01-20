@@ -1,0 +1,8 @@
+
+ul:nth-child(even)>li:nth-child(odd){
+    background: silver;
+}
+li:hover {
+    transition: 300ms;
+    background: greenyellow;
+}

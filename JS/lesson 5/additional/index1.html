@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Function in object</title>
+</head>
+<body>
+
+<script>
+
+    // types of functions
+    // function base - declaration
+
+    function functionBase() {
+        console.log('functionBase - testing')
+    }
+    functionBase();
+
+    // function return
+    function functionReturn(users) {
+        for (const user of users) {
+            if (user.age < 3000){
+                console.log('functionReturn')
+            };
+        };
+    };
+     let users = [
+         {id: 1, name:'anton', age:26, status: false},
+         {id: 2, name:'anna', age:22, status: false},
+         {id: 3, name:'kristina', age:36, status: true},
+         {id: 4, name:'sveta', age:56, status: false},
+         {id: 5, name:'sabina', age:226, status: true},
+         {id: 6, name:'sergei', age:16, status: false},
+         {id: 7, name:'pasha', age:22, status: false},
+         {id: 8, name:'oksana', age:223, status: true},
+         {id: 9, name:'lena', age:23, status: false},
+         {id: 10, name:'oleg', age:21, status: false},
+         {id: 11, name:'tanya', age:264, status: true},
+         {id: 12, name:'artur', age:23, status: false},
+       ];
+    functionReturn(users);
+
+    // function expression
+    let greeting = function () {
+        console.log('hiiiiiiiiiiiiiii')
+    };
+
+    // function arrow
+    let cald = (a,b) => a+b;
+    console.log(cald(1, 2));
+
+    // function in object
+
+    let user = {
+        name: 'anton',
+        age: 26,
+        greetings: function (msg) {
+            return `${msg} my name is ${user.name}`
+        },
+
+        }
+
+        console.log(user.greetings('fsdfsafsd'))
+
+
+
+
+
+
+</script>
+
+</body>
+</html>

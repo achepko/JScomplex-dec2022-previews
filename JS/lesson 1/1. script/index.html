@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        li:nth-child(5n+1){
+            background: cornflowerblue;
+        }
+
+        .camera {
+            width: 50%;
+            height: 50%;
+        }
+    </style>
+    <title>Lesson 1</title>
+</head>
+<body>
+
+<ul class="menu"></ul>
+
+<div class="camera">
+    <video src="" id="videoplayer"></video>
+</div>
+
+<script>
+
+//    let h1 = document.querySelector('h1');
+//    h1.innerText='okten'
+
+    //
+    // let msg1 = 'OKTEN';
+    // let h1 = document.createElement('h1');
+    // h1.innerText = msg1;
+    // document.body.append(h1)
+
+    //
+    // let msg = 'lorem ipsum';
+    // let p = document.createElement('p');
+    // p.innerText = msg
+    // document.body.append(p);
+
+    // let menu = document.querySelector('.menu');
+    // fetch('https://jsonplaceholder.typicode.com/users')
+    //     .then(value => value.json())
+    //     .then(users => {
+    //         for (const user of users){
+    //             let li = document.createElement('li');
+    //             li.innerText = user.id + ' ' + user.name;
+    //             menu.append(li);
+    //         }
+    //
+    //     })
+
+    // SSNavigator
+    // navigator.geolocation.getCurrentPosition(position => console.log(position))
+
+    navigator.mediaDevices.getUserMedia({video: true})
+        .then(stream => {
+            let videoplayer = document.getElementById('videoplayer');
+            videoplayer.srcObject = stream;
+            videoplayer.play();
+        });
+
+
+
+
+
+</script>
+</body>
+</html>

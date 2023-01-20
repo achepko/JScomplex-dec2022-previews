@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Functions base2</title>
+</head>
+<body>
+
+<script>
+
+
+  let users = [
+    {id: 1, name:'anton', age:26, status: false},
+    {id: 2, name:'anna', age:22, status: false},
+    {id: 3, name:'kristina', age:36, status: true},
+    {id: 4, name:'sveta', age:56, status: false},
+    {id: 5, name:'sabina', age:226, status: true},
+    {id: 6, name:'sergei', age:16, status: false},
+    {id: 7, name:'pasha', age:22, status: false},
+    {id: 8, name:'oksana', age:223, status: true},
+    {id: 9, name:'lena', age:23, status: false},
+    {id: 10, name:'oleg', age:21, status: false},
+    {id: 11, name:'tanya', age:264, status: true},
+    {id: 12, name:'artur', age:23, status: false},
+  ];
+
+  for(let user of users) {
+      for (let XXX in user) {
+          console.log(XXX,'-',user[XXX]);
+          document.write(`<h3>${user.name} - </h3>
+
+          `);
+      }
+
+
+      console.log(' ')
+  }
+
+
+
+  //
+  // let user= {
+  //   id: 1,
+  //   name: 'anton',
+  //   status: true,
+  //   skills: []
+  // }
+  //
+  // for (let fieldName in user){
+  //   console.log(user[fieldName])
+  // }
+
+</script>
+
+
+
+</body>
+</html>
